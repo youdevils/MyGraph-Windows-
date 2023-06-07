@@ -105,6 +105,11 @@
       <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)..\assets\*.*" "$(TargetDir)assets\"
+xcopy /Y /Q "$(ProjectDir)..\point_data.txt" "$(TargetDir)"
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -124,6 +129,11 @@
       <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)..\assets\*.*" "$(TargetDir)assets\"
+xcopy /Y /Q "$(ProjectDir)..\point_data.txt" "$(TargetDir)"
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -139,6 +149,11 @@
       <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)..\assets\*.*" "$(TargetDir)assets\"
+xcopy /Y /Q "$(ProjectDir)..\point_data.txt" "$(TargetDir)"
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -158,6 +173,11 @@
       <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)..\assets\*.*" "$(TargetDir)assets\"
+xcopy /Y /Q "$(ProjectDir)..\point_data.txt" "$(TargetDir)"
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
