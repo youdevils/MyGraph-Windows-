@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\DataFile.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\Font.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\FramerateManager.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\Graph.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\Menu.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\Point.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\ResourceFactory.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\SDLApp.hpp" />
+    <ClInclude Include="..\..\..\..\source\repos\WinGraph\WinGraph\include\SDLResourceManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\Font.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\FramerateManager.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\main.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\Menu.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\Point.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\ResourceFactory.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\SDLApp.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\WinGraph\WinGraph\src\SDLResourceManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\assets\Roboto-Bold.ttf" />
+    <Font Include="..\assets\Roboto-Regular.ttf" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ca4827ea-765e-46d1-bd1b-0be01880f3f5}</ProjectGuid>
+    <RootNamespace>MyGraph</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\include;C:\Users\leon\Desktop\MyGraph\MyGraph\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Image_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Font_X64\lib\x64;C:\Users\leon\Desktop\MyGraph\MyGraph\SDL2\Core_X64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
